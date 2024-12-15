@@ -3,32 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">  
+  
   <title>Frontend Mentor | Tech book club</title>
 </head>
 <body>
-  <main>
-    <section class="join">
-      <img src="./assets/images/logo.svg" alt="tech logo">
-
-      <div class="join__title">
-        <h1>Join the <br>ultimate tech <br>book club</h1>
-      </div>
-      <div class="join__description">
-        <p>Turn your reading time into learning time with fellow tech enthusiasts. 
-          Get curated recommendations, join vibrant discussions, and level up your 
-          skills one chapter at a time.</p>
+  <div class="container">
+    <main>
+      <div class="logo-container">
+        <img src="./assets/images/logo.svg" alt="Tech Book Club logo">
       </div>
 
-      <div class="join__options">
-        
-      </div>
-    </section>
-  </main>
+      <section class="hero-join">
+        <div class="hero-join__content">
+          <h1 class="hero-join__content--title">Join the <br>ultimate tech <br>book club</h1>
+          <p class="hero-join__content--description">Turn your reading time into learning time with fellow tech enthusiasts. 
+            Get curated recommendations, join vibrant discussions, and level up your 
+            skills one chapter at a time.</p>
+        </div>
 
+        <!-- hero image -->
+        <div class="hero-join__img">
+          <picture>
+            <source media="(max-width: 680px)" srcset="./assets/images/image-hero-mobile.svg">
+            <source media="(min-width: 681px)" srcset="./assets/images/image-hero-tablet.svg">
+            <img src="./assets/images/image-hero-desktop.svg" alt="Join the ultimate tech book club">
+          </picture>
+        </div>
+
+        <div class="hero-join__btn">
+          <button>Review membership options
+            <img src="./assets/images/icon-arrow-down.svg" alt="arrow down icon">
+          </button>
+        </div>
+
+        <div class="hero-join__rating">
+          <div class="hero-join__rating--images">
+            <img src="./assets/images/image-avatars.webp" alt="tech developers">
+          </div>
+          <div class="hero-join__rating--stars">
+            <img src="./assets/images/icon-star.svg" alt="star icon">
+            <img src="./assets/images/icon-star.svg" alt="star icon">
+            <img src="./assets/images/icon-star.svg" alt="star icon">
+            <img src="./assets/images/icon-star.svg" alt="star icon">
+            <img src="./assets/images/icon-star.svg" alt="star icon">
+          </div>
+          <div class="hero-join__rating--text">
+            <p>200+ developers joined already</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero__rtgt">
+
+      </section>
+    </main>
+  </div>
   
-  200+ developers joined already
+  
+  
 
   Read together, grow together
 
