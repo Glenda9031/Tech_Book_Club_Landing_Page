@@ -14,5 +14,24 @@
     --white: #fff;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Martian Mono', monospace;
+}
+
+.hero-join {
+  background-image: url('../assets/images/pattern-light-bg.svg');
+}
+
+.hero-join__content h1 {
+  color: var(--linear-gradient);
+}
 
 
