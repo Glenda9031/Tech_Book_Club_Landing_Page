@@ -9,29 +9,114 @@
 }
 
 :root {
-    --linear-gradient: (90deg, #ff9a60 -11.37%, #062630 61.84%);
-    --black: #000;
-    --white: #fff;
+  --Neutral900: #062630;
+  --Neutral700: #385159;
+  --Neutral200: #E6E1DF;
+  --Neutral100: #FAF5F3;
+  --Neutral0: #ffffff;
+
+  --LightSalmon500: #FEA36F;
+  --LightSalmon100: #FFF5EF;
+  --LightSalmon50: #FFF5EF;
+
+  --TextGradient: 
+  linear-gradient(
+  107deg, 
+  #FF9A60 -11.37%,
+  #062630 61.84%);
+
+  --Gradient: 
+  linear-gradient(
+  90deg,
+  #FFE2D1 0%,
+  #FFF5EF 100%);
+
+  /* Typography */
+
+  --martian: "Martian Mono", serif;
+  --inter: "Inter", serif;
+
+  --text-1: 700 3.875rem/1.2 var(--martian);
+  --text-1m: 700 2.375rem/1.2 var(--martian);
+
+  --text-2: 600 3.125rem/1.3 var(--martian);
+  --text-2m: 600 2.125rem/1.3 var(--martian);
+
+  --text-3: 600 2.125rem/1.3 var(--martian);
+  --text-3m: 600 1.5rem/1.3 var(--martian);
+
+  --text-4: 600 1.5rem/1.1 var(--martian);
+  --text-4r: 400 1.5rem/1.1 var(--martian);
+
+  --text-5: 600 1.25rem/1.4 var(--inter);
+  --text-5r: 400 1.25rem/1.4 var(--inter);
+
+  --text-6: 600 1.125rem/130% var(--martian);
+  --text-6m: 600 1rem/130% var(--martian);
+
+  --text-7: 400 .875rem/1.4 var(--martian);
+}
+
+html {
+  ovedrflow-x: hidden;
+}
+
+.desktop-only {
+  display: none;
+
+  @media (width >= 90em) {
+    display: initial;
+  }
+}
+
+.desktop-and-tablet {
+  display: none;
+
+  @media (width >= 48em) {
+    display: initial;
+  }
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: var(--black);
   background-color: var(--white);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Martian Mono', monospace;
+.letter-1 {
+  letter-spacing: -0.0625rem;
 }
 
-.hero-join {
-  background-image: url('../assets/images/pattern-light-bg.svg');
+.letter-2 {
+  letter-spacing: -.125rem;
 }
 
-.hero-join__content h1 {
-  color: var(--linear-gradient);
+.letter-4 {
+  letter-spacing: -.25rem;
 }
+
+.letter-5 {
+  letter-spacing: -.0313rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.5rem 1rem 5rem;
+  background-image: url('../assets/images/bg-pattern.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--Neutral100);
+  overfloww: hidden;
+}
+
 
 
