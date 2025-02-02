@@ -115,8 +115,74 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--Neutral100);
-  overfloww: hidden;
+  overflow: hidden;
+
+  & .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+  }
+
+  & .title-hero {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  }
+  
+  & .texts-hero {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  & h1 {
+      font: var(--text-1m);
+      background: var(--TextGradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  & p {
+      font: var(--text-5r);
+      color: var(--Neutral700);
+  }
+
+  & .btn-rvw {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  & .reviews {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+  }
+
+  & div:first-child {
+    & img {
+      width: 6.875rem;
+    }
+  }
+
+  & div:last-child {
+    & p {
+      font: var(--text-7);
+      color: var(--Neutral700);
+    }
+  }
 }
+
+& .hero-img {
+  & img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3125rem;
+  }
+}
+
+
 
 
 
