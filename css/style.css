@@ -1,4 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* FONTS */
+  --martianFont: "Martian mono", sans-serif;
+  --interFont: "Inter";
+
+  /* FONT SIZES */
+  --text-present-1: 3.875rem;
+  --text-present-1-mobile: 2.375rem;
+
+  --text-present-2: 3.125rem;
+  --text-present-2-mobile: 2.125rem;
+
+  --text-present-3: 2.125rem;
+
+  --text-present-4: 1.5rem;
+
+  --text-present-5: 1.25rem;
+
+  --text-present-6: 1.125rem;
+  --text-present-6-mobile: 1rem;
+
+  --text-present-7: 0.775rem;
+
+  /* COLORS */
+  --neutral-900: #062630;
+  --neutral-700: #385159;
+  --neutral-200: #e6e1df;
+  --neutral-100: #faf5f3;
+  --neutral-0: #fff;
+
+  --light-salmon-500: #fea36f;
+  --light-salmon-100: rgb(255, 226, 209);
+  --light-salmon-50: rgb(255, 245, 239);
+
+  --text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+  --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+}
 
 *,
 *::before,
@@ -8,11 +48,79 @@
   padding: 0;
 }
 
-:root {
- 
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--martianFont);
+  background: url('../assets/images/pattern-light.svg') repeat-x, rgba(255, 245, 239, 0.539);
 }
 
-html {
- 
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* UTILITIES */
+.padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.lined {
+  display: flex;
+  gap: 1rem;
+}
+
+/* MAIN */
+main {
+  max-width: 23.75rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.top-company-logo {
+  width: 13rem;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.join-section {
+  padding-bottom: 5rem;
+}
+
+h1 {
+  font-size: var(--text-present-1-mobile);
+  letter-spacing: -.125rem;
+  line-height: 1.2;
+  background-color: #fff;
+  background-image: var(--text-gradient);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+
+
 
