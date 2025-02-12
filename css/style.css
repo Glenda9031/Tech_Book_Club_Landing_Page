@@ -199,6 +199,38 @@ h2 {
   width: 1.7rem;
 }
 
+.club-section {
+  background-color: #fff;
+  padding-bottom: 5rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.circle {
+  width: 7rem;
+  position: absolute;
+  top: 5.3rem;
+  left: -0.45rem;
+}
+
+.club-section-text > p {
+  margin-bottom: 2.5rem;
+}
+
+.club-image {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.journey-section {
+  background: url('../assets/images/pattern-light-bg.svg'), linear-gradient(160deg, var(--light-salmon-50) 55%, #9ccda8f 100%);
+  padding: 3rem;
+  border-radius: 1rem;
+  display: none;
+}
+
 
 
 
