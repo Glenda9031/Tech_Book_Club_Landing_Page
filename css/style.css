@@ -427,7 +427,230 @@ h5 {
     max-width: 56.25rem;
   }
 
+  .padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  h1 {
+    font-size: var(--text-present-1);
+    padding-right: 5rem;
+  }
+
+  button {
+    width: 50%;
+  }
+
+  .mobile-join-image {
+    display: none;
+  }
+
+  .tablet-join-image {
+    display: block;
+  }
+
+  .join-section {
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0)60%, #9ccbdac0 100%);
+  }
+
+  h2 {
+    padding-right: 10rem;
+    font-size: var(--text-present-2);
+  }
+
+  .mobile-read-image {
+    display: none;
+  }
+
+  .tablet-read-image {
+    display: block;
+  }
+
+  .circle {
+    width: 10rem;
+    position: absolute;
+    top: 4rem;
+    left: 9.5rem;
+  }
+
+  .mobile-club-image {
+    display: none;
+  }
+
+  .tablet-club-image {
+    display: block;
+  }
+
+  .member-h2 {
+    padding-right: 0rem;
+  }
+
+  .membership-options {
+    grid-template-columns: 1fr;
+  }
+
+  .sub {
+    width: 100%;
+  }
+
+  .present-3 {
+    padding-right: 0rem;
+    font-size: var(--text-present-3);
+    line-height: 1.3;
+  }
+
+  .rating-section-author {
+    font-size: var(--text-present-5);
+  }
+
+  .debug-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .debug {
+    padding-right: 0rem;
+  }
+
+  .cont-cont {
+    width: 100%;
+  }
+
+  .comment-comment {
+    font-size: var(--text-present-7);
+    text-wrap: nowrap;
+  }
+
+  footer {
+    text-align: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--neutral-900);
+    padding: 0.5rem 2rem;
+  }
   
+  h5 {
+    font-size: var(--text-present-7);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .footer-img-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social {
+    width: 1rem;
+  }
+}
+
+@media (width > 75rem) {
+  main {
+    max-width: 75rem;
+  }
+
+  .join-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  button {
+    width: 70%;
+  }
+
+  .join-section-text-rating-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    place-items: center;
+    gap: 0rem;
+    margin-bottom: 3rem;
+    width: 80%;
+  }
+
+  .top-avatars {
+    width: 100%;
+    padding-right: -2rem;
+  }
+
+  .read-section {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .club-section {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .tablet-read-image {
+    border-radius: 2rem;
+  }
+
+  .read-section-text > h2{
+    padding: 0;
+  }
+
+  .circle {
+    width: 10rem;
+    position: absolute;
+    top: 8rem;
+    left: 0rem;
+  }
+
+  .member-h2 {
+    text-align: center;
+  }
+
+  .journey-section {
+    display: block;
+  }
+
+  .rating-section-stars {
+    justify-content: center;
+  }
+
+  .rating-section {
+    text-align: center;
+  }
+
+  .membership-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .margino {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .debug {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .debug-btn {
+    width: 40%;
+  }
+
+  .join-section-text-rating-container {
+    padding-left: 12rem;
+    gap: 1rem;
+  }
+
+  .paddigno {
+    padding-left: 0rem;
+  }
+
+  .debug-section {
+    padding-top: 5rem;
+  }
 }
 
 
